@@ -19,16 +19,7 @@ jobs:
 on:
   workflow_dispatch:
     inputs:
-      logLevel:
-        description: 'Log level'
-        required: false
-        default: 'warning'
-        type: choice
-        options:
-          - info
-          - warning
-          - debug
       environment:
         description: 'Environment to run tests against'
         type: environment
-        required: true
+        required: false
